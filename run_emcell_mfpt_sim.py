@@ -53,7 +53,7 @@ m.update_electric_field(new_electric_field)
 world = m.MCellSim(1)
 world.set_time_step(dt)
 world.set_iterations(iterations=int(2/dt))
-world.set_output_freq(1000)
+world.set_output_freq(10000)
 data_model = m.read_json_data_model(json_file_path)
 
 species_dict = m.create_species_from_dm(data_model)

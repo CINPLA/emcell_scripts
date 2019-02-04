@@ -44,7 +44,7 @@ for mode in [1,2]:
     pos = create_vector3()
     world.create_release_site(spec, quantity, shape, pos, diam)
 
-    f_n = 'output_' + str(mode) + '/'
+    f_n = 'results/output_' + str(mode) + '/'
     world.add_count(spec, folder_name=f_n)
     world.add_viz([spec], step=1, folder_name=f_n)
     for i in range(world._iterations):

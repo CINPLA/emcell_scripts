@@ -54,4 +54,4 @@ solve(a==L, u, bc)
 mfpt = u(Point(0,0,0))
 
 with open('results/fenics/' + funnel + '.csv','a+') as fd:
-    fd.write(ez + ',' + str(mfpt))
+    fd.write(ez + ',' + str(mfpt) + '\n')
